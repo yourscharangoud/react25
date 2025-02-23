@@ -66,7 +66,7 @@ const Header = () => {
                 </div>
 
                 {/* Scrollable nav links with better UX */}
-                <ul className="space-y-3 overflow-y-auto max-h-[85vh] pr-1 custom-scrollbar">
+                <ul className="space-y-3 overflow-y-auto max-h-[90vh] pb-10 pr-2 custom-scrollbar">
                     {pages.map((page, index) => {
                         const isActive = pathname === page.url;
                         return (
