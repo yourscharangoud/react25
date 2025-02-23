@@ -1,7 +1,8 @@
-export default function Three() {
+export default function LoadMore() {
     return (
       <div className="md:ml-60 p-6 mt-10 md:mt-0 transition-all duration-300">
-        <h1 className="text-3xl font-bold">Three</h1>
+        <h1 className="text-3xl font-bold">Load More</h1>
       </div>
     );
-}
+  }
+  

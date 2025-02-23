@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "React25 | Yours Charan Goud",
+  title: "React 25 | Yours Charan Goud",
   description: "Cool Charan",
 };
 
