@@ -53,10 +53,10 @@ const Header = () => {
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            {/* Sidebar */}
+            {/* Sidebar with 100dvh for full mobile support */}
             <div
                 ref={sidebarRef}
-                className={`fixed top-0 left-0 h-screen w-60 bg-gray-800 text-white p-4 shadow-lg z-40 transform transition-transform duration-300 ${
+                className={`fixed top-0 left-0 h-[100dvh] w-60 bg-gray-800 text-white p-4 shadow-lg z-40 transform transition-transform duration-300 ${
                     isOpen ? "translate-x-0" : "-translate-x-60"
                 } md:translate-x-0`}
             >
@@ -66,7 +66,7 @@ const Header = () => {
                 </div>
 
                 {/* Scrollable nav links with better UX */}
-                <ul className="space-y-3 overflow-y-auto max-h-[90vh] pb-10 pr-2 custom-scrollbar">
+                <ul className="space-y-3 overflow-y-auto h-[85dvh] pb-10 pr-2 custom-scrollbar">
                     {pages.map((page, index) => {
                         const isActive = pathname === page.url;
                         return (
